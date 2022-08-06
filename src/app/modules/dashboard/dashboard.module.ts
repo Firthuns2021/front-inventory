@@ -12,6 +12,11 @@ import {RouterModule} from "@angular/router";
 import {MaterialModule} from "../material/material.module";
 
 
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {NgChartsModule} from "ng2-charts";
+
+
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -21,11 +26,15 @@ import {MaterialModule} from "../material/material.module";
     CommonModule,
     RouterModule,
 
-    MaterialModule,
+
 
     SharedModule,
     CategoryModule,
     ProductModule,
+
+    MaterialModule,
+    FlexLayoutModule,
+    NgChartsModule
   ]
 })
 export class DashboardModule { }
